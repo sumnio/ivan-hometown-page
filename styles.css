@@ -45,15 +45,41 @@ body {
     height: 300px;
     display: flex;
     flex-direction: column;
+    border: 1px solid black;
 }
-
+#content-title {
+    color: #deeef7;
+    text-shadow: 1px 1px 1px black;
+    margin-top: 10px;
+    font-size: 23px;
+}
+#content {
+    height: inherit;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
 .content-info {
     display: flex;
     flex-direction: column;
-    border: 1px solid black;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 180px;
 }
-
 .image-content {
-    width: 50px;
-    height: 30px;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid #deeef7;
+}
+.image-content:hover {
+    border: 3px solid #6dbdf5;
+    transition: .3s;
+    transform: scale(1.1);
+}
+.content-bold {
+    font-weight: bold;
 }
